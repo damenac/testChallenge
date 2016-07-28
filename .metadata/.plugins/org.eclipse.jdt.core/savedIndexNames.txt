@@ -1,5 +1,4 @@
 INDEX VERSION 1.127+/Users/dmendeza/workspaces/testChallenge/.metadata/.plugins/org.eclipse.jdt.core
-4104294646.index
 4276456779.index
 3794497040.index
 1271342938.index

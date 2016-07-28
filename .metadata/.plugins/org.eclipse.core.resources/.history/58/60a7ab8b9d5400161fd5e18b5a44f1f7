@@ -14,7 +14,6 @@ public class BucketSortTest {
 
 	private List<Integer> scenario1;
 	private ISort sort;
-	  
 	
 	@Before
 	public void loadScenarios(){
