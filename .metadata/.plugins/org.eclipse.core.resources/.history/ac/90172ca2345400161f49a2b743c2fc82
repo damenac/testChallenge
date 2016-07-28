@@ -1,0 +1,51 @@
+package test.root;
+
+import junit.framework.JUnit4TestAdapter;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+import com.clarkware.junitperf.TestFactory;
+
+public class JUnitPerfAdaptor extends TestFactory {
+
+	/** Adaptor class serving as a bridge between JUnit 3 and JUnit 4  */
+   private static class AdaptorClass extends TestCase {}
+
+   /**
+    * Class containing the test case called in the performance test
+    */
+   private Class<?> testClass;
+
+   /**
+	 * Clase privada para la creación de casos de prueba.
+	 */
+   
+   // ------------------------------------------------------
+	// Constructores
+	// ------------------------------------------------------
+	
+   /**
+    * Metodo constructor del adaptador de versionamiento.
+    * @param testClass. Clase de pruebas que se quiere adaptar.
+    */
+   public JUnitPerfAdaptor(Class<?> testClass) {
+		super(AdaptorClass.class);
+		this.clasePorAdaptar = testClass;
+	}
+
+   // ------------------------------------------------------
+	// Métodos
+	// ------------------------------------------------------
+	
+   /**
+    * Clase que lleva a cabo el proceso de adaptación de versiones.
+    * @return testSuite. Clase adaptada.
+    */
+   @Override
+   protected TestSuite makeTestSuite() {
+       JUnit4TestAdapter unit4TestAdapter = new JUnit4TestAdapter(this.clasePorAdaptar);
+       TestSuite testSuite = new TestSuite("AdaptadorVersionamiento");
+       testSuite.addTest(unit4TestAdapter);
+       return testSuite;
+   }
+}

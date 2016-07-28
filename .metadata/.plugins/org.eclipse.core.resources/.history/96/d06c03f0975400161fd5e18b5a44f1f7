@@ -1,0 +1,26 @@
+package root;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import root.aux.CountedNumber;
+
+public class BucketSort implements ISort{
+
+	@Override
+	public void sort(List<Integer> numbers) {
+		
+		// Creating the auxiliary array with numbers in their position.
+		List<CountedNumber> auxiliary = new ArrayList<CountedNumber>();
+		for (int i = 0; i < numbers.size(); i++) {
+			if(auxiliary.get(numbers.get(i)) == null){
+				CountedNumber number = new CountedNumber(numbers.get(i));
+				auxiliary.add(numbers.get(i), number);
+			}else{
+				auxiliary.get(numbers.get(i)).increaseCount();
+			}
+		}
+		
+		// Building the sorted list
+	}
+}

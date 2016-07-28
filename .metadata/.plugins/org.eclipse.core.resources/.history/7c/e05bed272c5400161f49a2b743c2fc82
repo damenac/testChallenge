@@ -1,0 +1,27 @@
+package test.root;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import root.BubbleSort;
+
+public class SortTest {
+
+	private List<Integer> scenario1;
+	private BubbleSort sort;
+	
+	@BeforeClass
+	public void loadScenarios(){
+		scenario1 = new ArrayList<Integer>();
+	
+		sort = new BubbleSort();
+	}
+	
+	@Test
+	public void testSort(){
+		sort.sort(scenario1);
+	}
+}

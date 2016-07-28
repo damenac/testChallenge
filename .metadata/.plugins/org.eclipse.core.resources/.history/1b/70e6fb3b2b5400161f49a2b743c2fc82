@@ -1,0 +1,12 @@
+package test.root;
+
+import java.util.List;
+
+public class SortTest {
+
+	private List<Integer> scenario1;
+	
+	public void loadScenarios(){
+		
+	}
+}

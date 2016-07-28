@@ -1,0 +1,61 @@
+package test.root;
+
+import junit.framework.JUnit4TestAdapter;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+import com.clarkware.junitperf.TestFactory;
+
+public class JUnitPerfAdaptor extends TestFactory {
+
+	// ------------------------------------------------------
+	// Clases privadas
+	// ------------------------------------------------------
+
+	/**
+	 * Fantome class for 
+	 */
+   private static class FantomeClass extends TestCase {}
+
+   // ------------------------------------------------------
+	// Atributos
+	// ------------------------------------------------------
+	
+   /**
+    * Clase que se quiere adapatar para su uso en JUnitPerf.
+    */
+   private Class<?> clasePorAdaptar;
+
+   /**
+	 * Clase privada para la creación de casos de prueba.
+	 */
+   
+   // ------------------------------------------------------
+	// Constructores
+	// ------------------------------------------------------
+	
+   /**
+    * Metodo constructor del adaptador de versionamiento.
+    * @param testClass. Clase de pruebas que se quiere adaptar.
+    */
+   public JUnitPerfAdaptor(Class<?> testClass) {
+		super(FantomeClass.class);
+		this.clasePorAdaptar = testClass;
+	}
+
+   // ------------------------------------------------------
+	// Métodos
+	// ------------------------------------------------------
+	
+   /**
+    * Clase que lleva a cabo el proceso de adaptación de versiones.
+    * @return testSuite. Clase adaptada.
+    */
+   @Override
+   protected TestSuite makeTestSuite() {
+       JUnit4TestAdapter unit4TestAdapter = new JUnit4TestAdapter(this.clasePorAdaptar);
+       TestSuite testSuite = new TestSuite("AdaptadorVersionamiento");
+       testSuite.addTest(unit4TestAdapter);
+       return testSuite;
+   }
+}

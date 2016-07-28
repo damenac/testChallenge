@@ -1,0 +1,17 @@
+package test.root;
+
+import org.junit.Test;
+
+public class SortPerformanceTest {
+
+	public static Test desempenioLoginTest() {
+        long tiempoMaximo = 1000;
+        
+        //Proceso de adaptación de versionamiento. JUnit4 vs. JUnitPerf
+        JUnitPerfAdaptor factory = new JUnitPerfAdaptor( SortTest.class );
+        
+        Test testCase = factory.makeTestSuite();
+        Test tiempoMaximoTest = new TimedTest(testCase, tiempoMaximo);
+        return tiempoMaximoTest;
+    }
+}

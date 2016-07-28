@@ -1,0 +1,18 @@
+package root;
+
+import java.util.List;
+
+public class BucketSort implements ISort{
+
+	@Override
+	public void sort(List<Integer> numbers) {
+		
+		int max = -1;
+		for (Integer integer : numbers) {
+			if(integer > max)
+				max = integer.intValue();
+		}
+		
+	}
+
+}

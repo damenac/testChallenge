@@ -1,0 +1,16 @@
+package test.root;
+
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+
+public class SortTest {
+
+	private List<Integer> scenario1;
+	
+	@BeforeClass
+	public void loadScenarios(){
+		s
+	}
+}

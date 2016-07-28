@@ -1,0 +1,30 @@
+package test.root.utils;
+
+import test.root.JUnitPerfAdaptor;
+import test.root.SortTest;
+import junit.framework.Test;
+
+import com.clarkware.junitperf.TimedTest;
+
+public class SortPerformanceTest {
+
+	public static Test desempenioLoginTest() {
+		long tiempoMaximo = 1000;
+
+		JUnitPerfAdaptor factory = new JUnitPerfAdaptor(SortTest.class);
+		Test testCase = factory.makeTestSuite();
+		Test tiempoMaximoTest = new TimedTest(testCase, tiempoMaximo);
+		return tiempoMaximoTest;
+	}
+
+	// ------------------------------------------------------
+	// Main
+	// ------------------------------------------------------
+
+	/**
+	 * Método que inicia la ejecución de las pruebas de desempeño.
+	 */
+	public static void main(String[] args) {
+		junit.textui.TestRunner.run(desempenioLoginTest());
+	}
+}
