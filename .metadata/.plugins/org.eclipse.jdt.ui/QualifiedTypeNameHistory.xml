@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="root.BubbleSort"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
@@ -14,4 +13,9 @@
 <fullyQualifiedTypeName name="com.clarkware.junitperf.LoadTest"/>
 <fullyQualifiedTypeName name="com.clarkware.junitperf.Timer"/>
 <fullyQualifiedTypeName name="com.clarkware.junitperf.ConstantTimer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="root.aux.CountedNumber"/>
+<fullyQualifiedTypeName name="root.ISort"/>
+<fullyQualifiedTypeName name="root.BucketSort"/>
+<fullyQualifiedTypeName name="test.root.BucketSortTest"/>
 </qualifiedTypeNameHistroy>
