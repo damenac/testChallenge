@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
-<fullyQualifiedTypeName name="root.BubbleSort"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
@@ -13,9 +11,17 @@
 <fullyQualifiedTypeName name="com.clarkware.junitperf.LoadTest"/>
 <fullyQualifiedTypeName name="com.clarkware.junitperf.Timer"/>
 <fullyQualifiedTypeName name="com.clarkware.junitperf.ConstantTimer"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="root.aux.CountedNumber"/>
-<fullyQualifiedTypeName name="root.ISort"/>
-<fullyQualifiedTypeName name="root.BucketSort"/>
 <fullyQualifiedTypeName name="test.root.BucketSortTest"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="root.ISort"/>
+<fullyQualifiedTypeName name="root.BubbleSort"/>
+<fullyQualifiedTypeName name="root.BucketSort"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 </qualifiedTypeNameHistroy>

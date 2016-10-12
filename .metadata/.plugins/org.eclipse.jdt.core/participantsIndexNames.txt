@@ -1,0 +1,5 @@
+INDEX VERSION 1.126
+/Users/dmendeza/workspaces/testChallenge/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/116680853.index
+/test.challenge.ui/src
+/Users/dmendeza/workspaces/testChallenge/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3700210022.index
+/test.challenge.ui/src

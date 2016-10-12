@@ -1,7 +1,0 @@
-package root.aux;
-
-public class CountedNumber {
-
-	private Integer number;
-	private int count;
-}

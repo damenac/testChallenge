@@ -1,9 +1,0 @@
-package root;
-
-import java.util.List;
-
-public class BubbleSort {
-
-	public void sort(List<Integer> numbers){
-	}
-}

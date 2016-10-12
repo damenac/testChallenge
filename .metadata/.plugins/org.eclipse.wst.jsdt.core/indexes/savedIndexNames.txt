@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+/Users/dmendeza/workspaces/testChallenge/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3661360869.index
+461266648.index
+1556695510.index
+3665591245.index
+301218781.index

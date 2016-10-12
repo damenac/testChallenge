@@ -1,0 +1,7 @@
+127.0.0.1 - - [04/Aug/2016:09:02:58 +0200] "GET / HTTP/1.1" 404 962
+0:0:0:0:0:0:0:1 - - [04/Aug/2016:09:03:07 +0200] "GET /testChallenge HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [04/Aug/2016:09:03:07 +0200] "GET /testChallenge/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Aug/2016:09:03:07 +0200] "GET /favicon.ico HTTP/1.1" 404 984
+0:0:0:0:0:0:0:1 - - [04/Aug/2016:09:03:16 +0200] "GET /testChallenge/snoop?interval-min=10&interval-max=20&size=14&algorithm=bubble HTTP/1.1" 200 252
+0:0:0:0:0:0:0:1 - - [04/Aug/2016:09:03:23 +0200] "GET /testChallenge HTTP/1.1" 302 -
+127.0.0.1 - - [04/Aug/2016:09:04:59 +0200] "GET / HTTP/1.1" 404 962
